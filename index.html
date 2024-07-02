@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Attendance Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Form</h1>
+        <form action="https://api.web3forms.com/submit" method="POST" id="attendanceForm">
+
+            <input type="hidden" name="access_key" value="b95072ee-2979-4169-9d87-da6d20d0620f">
+            <fieldset>
+                <legend>Trainer Information</legend>
+                <div class="form-group">
+                    <label for="trainerName">Trainer's Name:</label>
+                    <input type="text" id="trainerName" name="trainerName" value="Muthu Hariharan S" readonly>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Student Information</legend>
+                <div class="form-group">
+                    <label for="studentName">Student's Name:</label>
+                    <select id="studentName" name="studentName" required>
+                        <option value="">Select a student</option>
+                        <option value="Sanjeev">Sanjeev</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="attendanceDate">Date:</label>
+                    <input type="date" id="attendanceDate" name="attendanceDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="inTime">In Time:</label>
+                    <input type="time" id="inTime" name="inTime" required>
+                </div>
+                <div class="form-group">
+                    <label for="outTime">Out Time:</label>
+                    <input type="time" id="outTime" name="outTime" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Topics Covered</legend>
+                <div class="form-group">
+                    <input type="text" name="topics" id="topics">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Attendance Status</legend>
+                <div class="form-group">
+                    <label class="custom-radio"><input type="radio" name="status" value="Present" required> Present<span></span></label>
+                    <label class="custom-radio"><input type="radio" name="status" value="Absent"> Absent<span></span></label>
+                    <label class="custom-radio"><input type="radio" name="status" value="Late"> Late<span></span></label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
