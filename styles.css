@@ -54,6 +54,7 @@ label {
     font-weight: 700;
 }
 
+
 input[type="text"],
 input[type="date"],
 input[type="time"],
@@ -71,6 +72,11 @@ select {
     margin-right: 10px;
     cursor: pointer;
     user-select: none;
+}
+.course{
+    width: 100%;
+    font-weight: 600;
+    left: 10px;
 }
 
 .custom-checkbox input,
